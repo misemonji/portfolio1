@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* header */
+
+.sw_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.sw_header img {
+    width: 120px;
+    height: 90px;
+}
+
+.sw_header p {
+    size: 30px;
+}
+
+
+/* header main img */
+
+.mainimg {
+    padding: 0px 0px 0px 0px;
+    line-height: 0em;
+    width: 100%;
+}
+
+.mainimg img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+/* main about */
+
+.main {
+    width: 70%;
+    background-color: rgba(83, 101, 83, 0.256);
+    margin: auto;
+}
+
+
+/* コンセプト */
+
+.shop-concept {
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    color: rgb(36, 61, 45);
+    padding-bottom: 25px;
+}
+
+.shop-concept p {
+    padding: 20px;
+}
+
+
+/* mouka img */
+
+.nouka {
+    padding-bottom: 100px;
+}
+
+.nouka li {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nouka ul {
+    width: calc(
+        (100% - 20px)/3
+    );
+}
+
+.nouka img {
+    width: 100%;
+}
+
+
+
+/* Menu */
+
+.menu {
+    padding: 50px;
+    padding-bottom: 200px;
+}
+
+.menu-syousai li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-syousai ul {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    line-height: normal;
+    border: 1px solid #00502b; /* 太さ1px、実線、黒色の枠線 */
+    margin-bottom: 5px;     /* 各項目の下に少し隙間を開ける */
+}
+
+.menu-syousai ul {
+    width: calc(
+        (100% - 20px)/4
+    );
+    background-color: rgba(255, 255, 255, 0.818);
+}
+
+.menu-syousai ul img {
+    width: 100%;
+}
+
+.menu-name {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.menu p {
+    font-weight: bold;
+}
+
+
+/* annai */
+
+.annai {
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.chizu {
+    padding: 30px;
+    padding-bottom: 80px;
+}
+
+.chizu ul {
+    list-style: none;
+}
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00502b;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+@media(max-width:600px){
+    .rei li {
+        width: calc(
+            (100% - 8px)/2
+        );
+    }    
+}
+
+@media(max-width:400px){
+    .rei li {
+        width: calc(
+            (100% - 8px)/1
+        );
+    }    
+}
