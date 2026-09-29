@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+:root {
+    --ns-bg: #fbf6ef;
+    --ns-surface: #ffffff;
+    --ns-text: #3a332c;
+    --ns-text-muted: #7a7167;
+    --ns-accent: #b3573f;
+    --ns-border: #e8dfd2;
+    --ns-max-width: 900px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--ns-bg);
+    color: var(--ns-text);
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    line-height: 1.9;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 36px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+section {
+    max-width: var(--ns-max-width);
+    margin: 0 auto;
+    padding: 90px 24px;
+}
+
+
+/* sample note */
+
+.sample-note {
+    text-align: center;
+    background-color: var(--ns-accent);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 6px;
+    letter-spacing: 0.05em;
+}
+
+
+/* header */
+
+.ns-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--ns-max-width);
+    margin: 0 auto;
+    padding: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ns-header__logo {
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
+}
+
+.ns-header__nav {
+    display: flex;
+    gap: 24px;
+}
+
+.ns-header__nav a {
+    font-size: 0.85rem;
+    color: var(--ns-text-muted);
+}
+
+.ns-header__nav a:hover {
+    color: var(--ns-accent);
+}
+
+
+/* hero */
+
+.ns-hero {
+    text-align: center;
+    padding: 100px 24px;
+}
+
+.ns-hero__en {
+    color: var(--ns-accent);
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    margin-bottom: 24px;
+}
+
+.ns-hero__title {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+
+.ns-hero__lead {
+    color: var(--ns-text-muted);
+}
+
+
+/* about */
+
+.ns-about {
+    background-color: var(--ns-surface);
+    text-align: center;
+}
+
+.ns-about p {
+    max-width: 560px;
+    margin: 0 auto;
+    color: var(--ns-text-muted);
+}
+
+
+/* works */
+
+.ns-works__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.ns-work-card__thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.ns-work-card__thumb--1 {
+    background: linear-gradient(135deg, #e8b8a0, #b3573f);
+}
+
+.ns-work-card__thumb--2 {
+    background: linear-gradient(135deg, #cdd6a8, #7c8f4f);
+}
+
+.ns-work-card__thumb--3 {
+    background: linear-gradient(135deg, #a9c4d1, #4c7688);
+}
+
+.ns-work-card__thumb--4 {
+    background: linear-gradient(135deg, #d8c2e0, #8a5f9c);
+}
+
+.ns-work-card__title {
+    font-size: 0.9rem;
+    color: var(--ns-text-muted);
+    text-align: center;
+}
+
+
+/* service */
+
+.ns-service {
+    background-color: var(--ns-surface);
+}
+
+.ns-service__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.ns-service-card {
+    text-align: center;
+    padding: 32px 16px;
+    border: 1px solid var(--ns-border);
+    border-radius: 6px;
+}
+
+.ns-service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.ns-service-card p {
+    font-size: 0.85rem;
+    color: var(--ns-text-muted);
+}
+
+
+/* contact */
+
+.ns-contact {
+    text-align: center;
+}
+
+.ns-contact p {
+    color: var(--ns-text-muted);
+    margin-bottom: 28px;
+}
+
+.ns-contact__button {
+    display: inline-block;
+    border: 1px solid var(--ns-accent);
+    color: var(--ns-accent);
+    padding: 14px 36px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ns-contact__button:hover {
+    background-color: var(--ns-accent);
+    color: #fff;
+}
+
+
+/* footer */
+
+.ns-footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--ns-text-muted);
+    font-size: 0.75rem;
+}
+
+
+/* responsive */
+
+@media (max-width: 640px) {
+    .ns-works__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ns-service__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ns-hero__title {
+        font-size: 1.6rem;
+    }
+}

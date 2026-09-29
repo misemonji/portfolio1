@@ -184,6 +184,18 @@ section {
     display: block;
 }
 
+.work-card__thumb--gradient {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e8b8a0, #b3573f);
+    color: #fff;
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    letter-spacing: 0.15em;
+    font-size: 1.1rem;
+}
+
 .work-card__thumb--soon {
     height: 200px;
     display: flex;
