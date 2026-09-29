@@ -1,210 +1,158 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sandwich site</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>梶本綾乃 | マルチクリエイター</title>
+    <meta name="description" content="梶本綾乃のポートフォリオサイト。動画編集・ライティング・デザイン・Web制作を、企画から納品まで一人で対応します。">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="sw_header">
-        <img src="logo.png" alt="logo">
-        <p><b>Wich&Wich</b></p>
-    </div>
+    <header class="site-header">
+        <p class="site-header__name">Ayano Kajimoto</p>
+        <nav class="site-header__nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#works">Works</a>
+            <a href="#flow">依頼の流れ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <div class="mainimg">
-        <img src="17.png" alt="mainimg">
-    </div>
+    <section class="hero">
+        <p class="hero__label">Multi Creator</p>
+        <h1 class="hero__title">梶本綾乃</h1>
+        <p class="hero__catch">企画から納品まで、窓口を一本化できます。</p>
+        <a href="#contact" class="hero__cta">お問い合わせはこちら</a>
+    </section>
 
-    <div class="main">
-        <div class="about">
-            <section class="shop-concept">
-                <h1>Concept</h1>
-                <div class="shop-setumei">
-                    <p class="concept-text">
-                        <b>「ひと口で感じる、自然の恵みと職人のこだわり」</b><br><br>
-                        当店のサンドウィッチは、契約農家から届く新鮮な朝採れ野菜と、
-                        旨味を最大限に引き出した厳選具材が主役です。<br>
-                        毎日焼き上げる香り高いパンで挟み込んだのは、
-                        <strong>「ヘルシーなのに、心まで満たされるボリューム感」</strong>。<br>
-                        栄養バランスと美味しさの黄金比をとことん追求しました。<br><br>
-                        忙しい日のエネルギーチャージや、休日のランチタイムに。<br>
-                        頬張るたびに素材の力が体に染み渡る、至福の味わいをぜひご賞味ください。
-                    </p>
+    <main>
+        <section id="about" class="about">
+            <h2>About</h2>
+            <div class="about__body">
+                <p>
+                    動画編集・ライティング・デザイン・Web制作と、複数の分野を横断して制作を行っています。<br>
+                    企画から納品まで、窓口を一本化できます。<br>
+                    複数の制作会社やフリーランスに個別に依頼する手間をなくし、
+                    ヒアリングから完成までをワンストップで対応することが強みです。
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills__grid">
+                <div class="skill-card">
+                    <h3>動画編集</h3>
                 </div>
-            </section>
+                <div class="skill-card">
+                    <h3>ライティング</h3>
+                </div>
+                <div class="skill-card">
+                    <h3>デザイン</h3>
+                </div>
+                <div class="skill-card">
+                    <h3>Web制作</h3>
+                </div>
+            </div>
+        </section>
 
-            <div class="nouka">
+        <section id="works" class="works">
+            <h2>Works</h2>
+            <div class="works__grid">
+                <a class="work-card" href="works/nagi-studio/index.html" target="_blank" rel="noopener">
+                    <div class="work-card__thumb work-card__thumb--gradient">Nagi Studio</div>
+                    <div class="work-card__body">
+                        <span class="work-card__category">Web制作</span>
+                        <h3>Nagi Studio（制作サンプル）</h3>
+                        <p>フリーランスイラストレーターを想定した架空ブランドサイト。HTML / CSSでコーディングしました。</p>
+                    </div>
+                </a>
+
+                <div class="work-card work-card--soon">
+                    <div class="work-card__thumb work-card__thumb--soon">Coming Soon</div>
+                    <div class="work-card__body">
+                        <span class="work-card__category">動画編集</span>
+                        <h3>制作実績準備中</h3>
+                        <p>近日追加予定です。</p>
+                    </div>
+                </div>
+
+                <div class="work-card work-card--soon">
+                    <div class="work-card__thumb work-card__thumb--soon">Coming Soon</div>
+                    <div class="work-card__body">
+                        <span class="work-card__category">ライティング</span>
+                        <h3>制作実績準備中</h3>
+                        <p>近日追加予定です。</p>
+                    </div>
+                </div>
+
+                <div class="work-card work-card--soon">
+                    <div class="work-card__thumb work-card__thumb--soon">Coming Soon</div>
+                    <div class="work-card__body">
+                        <span class="work-card__category">デザイン</span>
+                        <h3>制作実績準備中</h3>
+                        <p>近日追加予定です。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="flow" class="flow">
+            <h2>依頼の流れ</h2>
+            <ol class="flow__list">
                 <li>
-                    <ul>
-                        <img src="24.png" alt="">
-                    </ul>
-                    <ul>
-                        <img src="26.png" alt="">
-                    </ul>
-                    <ul>
-                        <img src="25.png" alt="">
-                    </ul>
+                    <span class="flow__step">01</span>
+                    <div>
+                        <h3>お問い合わせ</h3>
+                        <p>Instagramのメッセージよりお気軽にご連絡ください。</p>
+                    </div>
                 </li>
-            </div>
+                <li>
+                    <span class="flow__step">02</span>
+                    <div>
+                        <h3>ヒアリング</h3>
+                        <p>ご要望・目的・ご予算などを詳しくお伺いします。</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="flow__step">03</span>
+                    <div>
+                        <h3>お見積り・ご提案</h3>
+                        <p>内容に応じて、お見積りと制作プランをご提案します。</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="flow__step">04</span>
+                    <div>
+                        <h3>制作</h3>
+                        <p>企画から制作まで一貫して対応します。</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="flow__step">05</span>
+                    <div>
+                        <h3>納品</h3>
+                        <p>内容をご確認いただき、納品となります。</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
 
-            <section class="menu">
-                <h1>Menu</h1>
-                <div class="menu-syousai">
-                    <li>
-                        <ul>
-                            <img src="1.png" alt="">
-                            <div class="menu-name">
-                                <p>Wichサンド</p>
-                                <small>【単品】370円</small>
-                                <small>【セット】500円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="2.png" alt="">
-                            <div class="menu-name">
-                                <p>ベーコンレタスサンド</p>
-                                <small>【単品】350円</small>
-                                <small>【セット】480円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="3.png" alt="">
-                            <div class="menu-name">
-                                <p>王道サンド</p>
-                                <small>【単品】390円</small>
-                                <small>【セット】520円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="5.png" alt="">
-                            <div class="menu-name">
-                                <p>たまごレタスサンド</p>
-                                <small>【単品】460円</small>
-                                <small>【セット】590円</small>
-                            </div>
-                        </ul>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>お仕事のご相談・お見積りのご依頼は、Instagramよりお気軽にご連絡ください。</p>
+            <a class="contact__link" href="https://www.instagram.com/_mer.2525/?hl=ja" target="_blank" rel="noopener">
+                Instagram：@_mer.2525
+            </a>
+        </section>
+    </main>
 
-                        <ul>
-                            <img src="9.png" alt="">
-                            <div class="menu-name">
-                                <p>ハム＆チーズサンド</p>
-                                <small>【単品】450円</small>
-                                <small>【セット】580円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="6.png" alt="">
-                            <div class="menu-name">
-                                <p>ホットサンド🌶️</p>
-                                <small>【単品】430円</small>
-                                <small>【セット】550円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="7.png" alt="">
-                            <div class="menu-name">
-                                <p>チーズベーコンバーガー</p>
-                                <small>【単品】550円</small>
-                                <small>【セット】680円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="8.png" alt="">
-                            <div class="menu-name">
-                                <p>ビッグバーガー</p>
-                                <small>【単品】630円</small>
-                                <small>【セット】760円</small>
-                            </div>
-                        </ul>
-
-                        <ul>
-                            <img src="4.png" alt="">
-                            <div class="menu-name">
-                                <p>昔ながらのバーガー</p>
-                                <small>【単品】460円</small>
-                                <small>【セット】590円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="10.png" alt="">
-                            <div class="menu-name">
-                                <p>チキンバーガー</p>
-                                <small>【単品】540円</small>
-                                <small>【セット】670円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="11.png" alt="">
-                            <div class="menu-name">
-                                <p>どデカいパフェ</p>
-                                <small>670円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="12.png" alt="">
-                            <div class="menu-name">
-                                <p>フライドポテト</p>
-                                <small>【Regular】370円</small>
-                                <small>【Large】500円</small>
-                            </div>
-                        </ul>
-
-                        <ul>
-                            <img src="13.png" alt="">
-                            <div class="menu-name">
-                                <p>レモネード</p>
-                                <small>200円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="14.png" alt="">
-                            <div class="menu-name">
-                                <p>グレープフルーツ</p>
-                                <small>230円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="15.png" alt="">
-                            <div class="menu-name">
-                                <p>コカコーラ</p>
-                                <small>180円</small>
-                            </div>
-                        </ul>
-                        <ul>
-                            <img src="" alt="">
-                            <div class="menu-name">
-                                <p></p>
-                                <small></small>
-                            </div>
-                        </ul>
-                    </li>
-                </div>
-            </section>
-
-            <div class="annai">
-                <div class="chizu">
-                    <ul>
-                        <li>【Wich&Wichi】</li>
-                        <li>住所：〒000-0000 東京都渋谷区表参道〇〇１丁目１−２</li>
-                        <li>Google map：<a href="https://g.page/TOKYOSKYTREE-official?share">https://g.page/TOKYOSKYTREE-official?share</a></li>
-                        <li>営業日時：年中無休／8時～18時</li>
-                      </ul>
-                </div>
-                
-                <small>ご予約はこちらの電話番号またはメールにて承ります<br>
-                    【電話】000-0000-0000<br>
-                    【メール】aaaaa111@website.org
-                </small>
-            </div>
-        </div>
-    </div>
+    <footer class="site-footer">
+        <small>&copy; Ayano Kajimoto</small>
+    </footer>
 </body>
-
-<footer>
-    <small><b>@Wich&Wich</b></small>
-</footer>
 
 </html>
